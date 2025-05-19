@@ -2,6 +2,9 @@ import type { Metadata } from "next";
 import { Geist, Geist_Mono } from "next/font/google";
 import "./globals.css";
 
+import { Button } from "@/components/ui/Button";
+import { Input } from "@/components/ui/Input";
+
 const geistSans = Geist({
   variable: "--font-geist-sans",
   subsets: ["latin"],
@@ -23,10 +26,23 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="en">
+    <html lang="pt-BR" className="bg-background text-foreground">
       <body
-        className={`${geistSans.variable} ${geistMono.variable} antialiased`}
+        className={`${geistSans.variable} ${geistMono.variable} antialiased min-h-screen flex flex-col items-center justify-center gap-4 p-8`}
       >
+        <h1 className="text-3xl font-bold">Teste de Componentes</h1>
+
+        <Button variant="default" size="default">
+          Botão Padrão
+        </Button>
+
+        <Button variant="outline" size="sm">
+          Botão Secundário
+        </Button>
+
+        <Input placeholder="Digite algo..." />
+        <Input placeholder="Input pequeno"/>
+
         {children}
       </body>
     </html>
