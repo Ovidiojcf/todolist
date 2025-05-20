@@ -32,7 +32,7 @@ export default function RootLayout({
       >
         <h1 className="text-3xl font-bold">Teste de Componentes</h1>
 
-        <Button variant="default" size="default">
+        <Button size="default">
           Botão Padrão
         </Button>
 
