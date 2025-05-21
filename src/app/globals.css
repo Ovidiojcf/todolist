@@ -1,2 +1,48 @@
 @import "tailwindcss";
+:root {
+  /* Base */
+  --background: #1f1f1f;
+  --foreground: #ffffff;
 
+  /* Cores principais */
+  --primary: #2563eb;
+  --primary-foreground: #ffffff;
+
+  --secondary: #3f3f46;
+  --secondary-foreground: #ffffff;
+
+  /* Feedback (ações) */
+  --destructive: #dc2626;
+  --destructive-foreground: #ffffff;
+
+  --success: #22c55e;
+  --success-foreground: #ffffff;
+
+  --warning: #facc15;
+  --warning-foreground: #000000;
+
+  --info: #0ea5e9;
+  --info-foreground: #ffffff;
+
+  /* Outros */
+  --accent: #4f46e5;
+  --accent-foreground: #ffffff;
+
+  --muted: #27272a;
+  --muted-foreground: #a1a1aa;
+
+  --border: #3f3f46;
+  --input: #52525b;
+  --ring: #2563eb;
+  --ring-offset-background: #1f1f1f;
+}
+
+@layer base {
+  html {
+    @apply bg-[var(--background)] text-[var(--foreground)] antialiased;
+  }
+
+  body {
+    @apply min-h-screen antialiased;
+  }
+}
