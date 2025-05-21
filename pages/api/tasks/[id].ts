@@ -7,20 +7,29 @@ export default async function handler(req: NextApiRequest, resp: NextApiResponse
 
     if (req.method === 'PUT') {
         const { title, description, dueDate, done } = req.body;
-
-        if (!title || !description || !dueDate || typeof done !== 'boolean') {
+        // Validate the request body more simply
+        // Just to update parts of the task
+        //!title || !description || !dueDate || typeof done !== 'boolean'
+        if (!id || typeof id !== 'string') {
             return resp.status(400).json({ message: 'Missing required fields' });
         }
 
         try {
+            // update only the fields that are provided
+            const dataToUpdate: Partial<{
+            title: string;
+            description: string;
+            dueDate: Date;
+            done: boolean;
+            }> = {};
+            if (title !== undefined) dataToUpdate.title = title;
+            if (description !== undefined) dataToUpdate.description = description;
+            if (dueDate !== undefined) dataToUpdate.dueDate = new Date(dueDate);
+            if (done !== undefined) dataToUpdate.done = done;
+
             const updatedTask = await prisma.task.update({
-                where: { id: id as string },
-                data: {
-                    title,
-                    description,
-                    dueDate: new Date(dueDate),
-                    done
-                }
+                where: { id },
+                data: dataToUpdate,
             });
 
             return resp.status(200).json(updatedTask);
