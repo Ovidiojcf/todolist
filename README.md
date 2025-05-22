@@ -54,3 +54,5 @@ Utilizei IA para gerar esboços iniciais do código e estrutura do projeto, alé
 ![Image](https://github.com/user-attachments/assets/16b161b2-d06e-497e-96dc-e3ab72710da0)
 
 ![Image](https://github.com/user-attachments/assets/0265bd47-f347-4f72-adbf-c1ff0f904583)
+
+![Image](https://github.com/user-attachments/assets/ca9569a3-b202-42bc-9545-bd21f6879e2a)
