@@ -52,3 +52,5 @@ Utilizei IA para gerar esboços iniciais do código e estrutura do projeto, alé
 ## Fotos do Projeto Rodando Localmente
 
 ![Image](https://github.com/user-attachments/assets/16b161b2-d06e-497e-96dc-e3ab72710da0)
+
+![Image](https://github.com/user-attachments/assets/0265bd47-f347-4f72-adbf-c1ff0f904583)
