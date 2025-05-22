@@ -46,4 +46,4 @@ npx prisma migrate dev --name init
 
 ## Uso de IA
 
-Utilizei IA para gerar esboços iniciais do código e estrutura do projeto, além de otimizar trechos repetitivos e esclarecer dúvidas sobre erros e boas práticas de codificação.
+Utilizei IA para gerar esboços iniciais do código e estrutura do projeto, além de otimizar trechos repetitivos e esclarecer dúvidas sobre erros e boas práticas de codificação. Foi importante principalmente para entender sobre a implementação de componentes com CVA(class-variance-authority).
